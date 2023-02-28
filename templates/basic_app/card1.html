@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card1</title>
+
+    <link rel="stylesheet" href="/card1.css">
+    <script src="https://kit.fontawesome.com/b53972c862.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<center>
+    <div class="container">
+        <div class="card-container">
+
+
+            <div class="left-card">
+                <div class="img-container">
+                    <img src="/discord.png" alt="" srcset="">
+                </div>
+                <br>
+                <h1>Henry Jose</h1>
+                <br>
+                <p>Hi this is a professional web developer with qualitative experience.
+                    {% if user.is_authenticated %}
+                        <h1>hello user</h1>
+                    {% else %}
+                        <h1>hello guest</h1>
+                    {% endif %}
+                </p>
+            
+            </div>
+
+            <div class="right-card">
+                <div class="link">
+                        <div class="text">
+                            github
+                        </div>
+
+                        <div class="logo">
+                            <i class="fa-brands fa-github fa-4x"></i>
+                        </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</center>
+</body>
+</html>
